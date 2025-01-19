@@ -38,6 +38,30 @@
         <header class="flex items-center gap-x-3 overflow-hidden py-4">
             <div class="grid flex-1 gap-y-1">
                 <h3 class="fi-section-header-heading text-base font-semibold leading-6 text-gray-950 dark:text-white">
+                    {{ __('themes::themes.color_mode') }}
+                </h3>
+
+                <p class="fi-section-header-description text-sm text-gray-500 dark:text-gray-400">
+                    {{ __('themes::themes.select_color_mode') }}
+                </p>
+            </div>
+        </header>
+
+        <div class="flex items-center gap-4 border-t py-6">
+            @if (! $this->getCurrentTheme() instanceof \Hasnayeen\Themes\Contracts\HasOnlyDarkMode && ! $this->getCurrentTheme() instanceof \Hasnayeen\Themes\Contracts\HasOnlyLightMode)
+                <div style="width: 13.5rem;">
+                    <x-filament-panels::theme-switcher />
+                </div>
+            @else
+                <p class="text-gray-700 dark:text-gray-400">{{ __('themes::themes.no_changing_color_mode') }}</p>
+            @endif
+        </div>
+    </section>
+
+    <section class="">
+        <header class="flex items-center gap-x-3 overflow-hidden py-4">
+            <div class="grid flex-1 gap-y-1">
+                <h3 class="fi-section-header-heading text-base font-semibold leading-6 text-gray-950 dark:text-white">
                     {{ __('themes::themes.themes') }}
                 </h3>
         
