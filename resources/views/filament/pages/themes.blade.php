@@ -24,7 +24,7 @@
                         style="background-color: rgb({{ $color[500] }});">
                     </button>
                 @endforeach
-                <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                <div class="flex items-center gap-x-4">
                     <input type="color" id="custom" name="custom" class="w-4 h-4" wire:change="setColor($event.target.value)" value="" />
                     <label for="custom">{{ __('themes::themes.custom') }}</label>
                 </div>
@@ -81,7 +81,7 @@
 
                 <x-filament::section>
                     <x-slot name="heading">
-                        <div class="flex items-center space-x-4">
+                        <div class="flex items-center gap-x-4">
                             <div>{{ \Illuminate\Support\Str::title($name) }}</div>
                             @if ($supportColorChange)
                                 <span
