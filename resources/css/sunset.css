@@ -63,3 +63,7 @@ body {
 .fi-ta-ctn {
     @apply ring-2 ring-primary-50 dark:!ring-gray-950 border border-primary-100 dark:border-gray-900 shadow-none;
 }
+
+:root .sr-only {
+    @apply start-0;
+}
