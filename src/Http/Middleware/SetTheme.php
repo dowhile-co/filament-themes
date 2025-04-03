@@ -76,7 +76,16 @@ class SetTheme
         $bodyClass = "filament-themes-{$currentTheme::getName()}";
         FilamentAsset::register([
             Js::make('themes-body-class')
-                ->html("<script>document.addEventListener('DOMContentLoaded', function() { document.body.classList.add('{$bodyClass}'); });</script>"),
+                ->html("<script>
+                    // Add class on initial page load
+                    document.addEventListener('DOMContentLoaded', function() {
+                        document.body.classList.add('{$bodyClass}');
+                    });
+                    // Add class on Livewire page navigations (SPA mode)
+                    document.addEventListener('livewire:navigated', function() {
+                        document.body.classList.add('{$bodyClass}');
+                    });
+                </script>"),
         ], 'hasnayeen/themes');
 
         return $next($request);
