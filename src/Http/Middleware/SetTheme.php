@@ -6,6 +6,7 @@ use Closure;
 use Filament\Facades\Filament;
 use Filament\Navigation\MenuItem;
 use Filament\Support\Assets\Css;
+use Filament\Support\Assets\Js;
 use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentColor;
 use Hasnayeen\Themes\Contracts\CanModifyPanelConfig;
@@ -70,6 +71,13 @@ class SetTheme
         if ($currentTheme instanceof CanModifyPanelConfig) {
             $currentTheme->modifyPanelConfig($panel);
         }
+
+        // Add theme name as class to body element
+        $bodyClass = "filament-themes-{$currentTheme::getName()}";
+        FilamentAsset::register([
+            Js::make('themes-body-class')
+                ->html("<script>document.addEventListener('DOMContentLoaded', function() { document.body.classList.add('{$bodyClass}'); });</script>"),
+        ], 'hasnayeen/themes');
 
         return $next($request);
     }
