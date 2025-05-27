@@ -1,6 +1,6 @@
 # Themes for Filament panels
 
-![preview](https://raw.githubusercontent.com/Hasnayeen/themes/3.x/assets/preview.png)
+![preview](https://raw.githubusercontent.com/dowhile-co/filament-themes/3.x/assets/preview.png)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/hasnayeen/themes.svg?style=flat-square)](https://packagist.org/packages/hasnayeen/themes)
 [![Total Downloads](https://img.shields.io/packagist/dt/hasnayeen/themes.svg?style=flat-square)](https://packagist.org/packages/hasnayeen/themes)
@@ -113,7 +113,7 @@ Add `Hasnayeen\Themes\Http\Middleware\SetTheme` middleware to your provider `mid
 
 This plugin provides a themes setting page. You can visit the page from user menu.
 
-![page-menu-link](https://raw.githubusercontent.com/Hasnayeen/themes/3.x/assets/page-menu-link.png)
+![page-menu-link](https://raw.githubusercontent.com/dowhile-co/filament-themes/3.x/assets/page-menu-link.png)
 
 ## Authorization
 
@@ -232,23 +232,23 @@ Next add a new item to the `input` array of `vite.config.js`: `resources/css/awe
 
 Sunset (light)
 
-![sunset-light](https://raw.githubusercontent.com/Hasnayeen/themes/3.x/assets/sunset-light.png)
+![sunset-light](https://raw.githubusercontent.com/dowhile-co/filament-themes/3.x/assets/sunset-light.png)
 
 Sunset (dark)
 
-![sunset-dark](https://raw.githubusercontent.com/Hasnayeen/themes/3.x/assets/sunset-dark.png)
+![sunset-dark](https://raw.githubusercontent.com/dowhile-co/filament-themes/3.x/assets/sunset-dark.png)
 
 Dracula (dark)
 
-![dracula-dark](https://raw.githubusercontent.com/Hasnayeen/themes/3.x/assets/dracula-dark.png)
+![dracula-dark](https://raw.githubusercontent.com/dowhile-co/filament-themes/3.x/assets/dracula-dark.png)
 
 Nord (light)
 
-![nord-light](https://raw.githubusercontent.com/Hasnayeen/themes/3.x/assets/nord-light.png)
+![nord-light](https://raw.githubusercontent.com/dowhile-co/filament-themes/3.x/assets/nord-light.png)
 
 Nord (dark)
 
-![nord-dark](https://raw.githubusercontent.com/Hasnayeen/themes/3.x/assets/nord-dark.png)
+![nord-dark](https://raw.githubusercontent.com/dowhile-co/filament-themes/3.x/assets/nord-dark.png)
 
 ## Upgrading
 
