@@ -18,6 +18,7 @@ use Hasnayeen\Themes\Themes\DefaultTheme;
 use Hasnayeen\Themes\Themes\Sunset;
 use Hasnayeen\Themes\Themes\Dracula;
 use Hasnayeen\Themes\Themes\Nord;
+use Hasnayeen\Themes\Themes\AndreiaNord;
 use Hasnayeen\Themes\ThemesPlugin;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -60,6 +61,7 @@ class SetTheme
                 Sunset::class => Css::make(Sunset::getName(), Sunset::getPath()),
                 Dracula::class => Css::make(Dracula::getName(), Dracula::getPath()),
                 Nord::class => Css::make(Nord::getName(), Nord::getPath()),
+                AndreiaNord::class => Css::make(AndreiaNord::getName(), AndreiaNord::getPath()),
                 default => Css::make(DefaultTheme::getName(), DefaultTheme::getPath()),
             },
         ], 'hasnayeen/themes');

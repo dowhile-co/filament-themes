@@ -9,6 +9,7 @@ use Hasnayeen\Themes\Themes\DefaultTheme;
 use Hasnayeen\Themes\Themes\Sunset;
 use Hasnayeen\Themes\Themes\Dracula;
 use Hasnayeen\Themes\Themes\Nord;
+use Hasnayeen\Themes\Themes\AndreiaNord;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use InvalidArgumentException;
@@ -24,6 +25,7 @@ class Themes
             Sunset::getName() => Sunset::class,
             Dracula::getName() => Dracula::class,
             Nord::getName() => Nord::class,
+            AndreiaNord::getName() => AndreiaNord::class,
         ]);
     }
 
