@@ -21,6 +21,7 @@
                             'w-4 h-4 rounded-full',
                             'ring p-1 border' => $this->getColor() === $name,
                         ])
+                        title="{{ $name }}"
                         x-tooltip="{
                             content: '{{ __('themes::themes.' . $name) }}',
                             theme: $store.theme,
