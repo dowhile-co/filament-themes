@@ -64,7 +64,7 @@ class Themes extends Page
         }
 
         Notification::make()
-            ->title(__('themes::themes.primary_color_set') . ' ' . $color . '.')
+            ->title(__('themes::themes.primary_color_set') . ' ' . __('themes::themes.' . $color) . '.')
             ->success()
             ->send();
 

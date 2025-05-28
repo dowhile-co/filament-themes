@@ -22,7 +22,7 @@
                             'ring p-1 border' => $this->getColor() === $name,
                         ])
                         x-tooltip="{
-                            content: '{{ $name }}',
+                            content: '{{ __('themes::themes.' . $name) }}',
                             theme: $store.theme,
                         }"
                         style="background-color: rgb({{ $color[500] }});">
