@@ -7,7 +7,7 @@
 }
 
 .fi-topbar nav, .fi-sidebar-header {
-    @apply bg-[#f5f8fa] dark:bg-[#252a35];
+    @apply !bg-[#f5f8fa] dark:!bg-[#252a35];
 }
 
 .fi-btn-color-primary {
@@ -79,7 +79,7 @@
 }
 
 .fi-ta-ctn {
-    @apply shadow-md rounded-2xl border-none ring-0 dark:ring-1 divide-gray-100; /*rounded-none*/
+    @apply !shadow-md rounded-2xl border-none ring-0 dark:ring-1 divide-gray-100; /*rounded-none*/
 }
 
 .fi-section, .fi-wi-stats-overview-stat, .fi-ta-ctn, .fi-tenant-menu, .fi-dropdown-panel {
@@ -88,7 +88,7 @@
 }
 
 .fi-section, .fi-wi-stats-overview-stat {
-    @apply shadow-md rounded-2xl border-none ring-0 dark:ring-1;
+    @apply !shadow-md rounded-2xl border-none ring-0 dark:ring-1;
 }
 
 .fi-topbar-item-active a, .fi-topbar-item-active button {
