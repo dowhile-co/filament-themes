@@ -21,6 +21,10 @@
                             'w-4 h-4 rounded-full',
                             'ring p-1 border' => $this->getColor() === $name,
                         ])
+                        x-tooltip="{
+                            content: '{{ $name }}',
+                            theme: $store.theme,
+                        }"
                         style="background-color: rgb({{ $color[500] }});">
                     </button>
                 @endforeach
